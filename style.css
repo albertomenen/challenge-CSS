@@ -4,6 +4,7 @@
   padding: 0;
   font-size: 16px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
 }
 
 /**** Color variables ****/
@@ -17,6 +18,7 @@
 
 body {
   background-color: var(--basic-white);
+  padding-bottom: 110px;
 }
 
 /***** Typography ******/
@@ -41,10 +43,90 @@ h4 {
 
 /**** Container *****/
 
+.container {
+  width: 100vw;
+  padding: 20px;
+}
+
 /***** Header ******/
+
+#header {
+  background-color: #fe6d73;
+  color: white
+}
 
 /***** Navbar styles ****/
 
+
+nav {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  position:fixed;
+  bottom: -1px;
+  border-radius: 15px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  width: 50px;
+}
+
+.sticky {
+  position: fixed;
+  top:0;
+  width: 100%;
+}
+
+
 /***** Card styles ****/
 
+.card {
+  background-color: #FF7B54;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 25px;
+  margin-top: 100px;
+}
+
+img {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #3DB2FF;
+  color: white;
+  border-radius: 0%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+
+}
+
 /******* Search input *******/
+
+form > input.search-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px  solid  #7286D3;
+}
+
+
+
+input::placeholder {
+  color: #7286D3;
+}
